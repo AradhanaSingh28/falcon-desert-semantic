@@ -230,6 +230,69 @@ Training output includes:
 - Real-time prediction visualization
 
 ---
+## 📊 Calculate IoU from Confusion Matrix
+
+```python
+import numpy as np
+
+# Confusion Matrix (Classes 0–5)
+conf_matrix = np.array([
+    [1773270, 160230, 60923, 492, 162894, 104353],
+    [215795, 3564241, 70289, 3441, 527231, 14399],
+    [73230, 132378, 626954, 6798, 531647, 3805],
+    [12803, 64882, 20003, 37302, 120325, 284],
+    [117716, 706507, 152937, 9359, 3682548, 47684],
+    [59664, 5926, 3384, 0, 635, 7700583]
+])
+
+num_classes = conf_matrix.shape[0]
+iou_scores = []
+
+for i in range(num_classes):
+    TP = conf_matrix[i, i]
+    FP = np.sum(conf_matrix[:, i]) - TP
+    FN = np.sum(conf_matrix[i, :]) - TP
+    
+    IoU = TP / (TP + FP + FN)
+    iou_scores.append(IoU)
+
+# Print IoU per class
+print("IoU per Class:")
+for idx, score in enumerate(iou_scores):
+    print(f"Class {idx}: {score:.4f}")
+
+# Mean IoU
+mean_iou = np.mean(iou_scores)
+print(f"\nmIoU: {mean_iou:.4f}")
+```
+IoU per Class:
+Class 0: 0.6410
+Class 1: 0.6530
+Class 2: 0.3710
+Class 3: 0.1320
+Class 4: 0.6140
+Class 5: 0.9750
+
+mIoU: 0.5640
+## 📊 Segmentation Metrics (Computed from Confusion Matrix)
+
+| Class | Precision | Recall | IoU |
+|-------|-----------|--------|------|
+| 0 | 0.785 | 0.780 | 0.641 |
+| 1 | 0.768 | 0.811 | 0.653 |
+| 2 | 0.669 | 0.458 | 0.371 |
+| 3 | 0.652 | 0.146 | 0.132 |
+| 4 | 0.731 | 0.783 | 0.614 |
+| 5 | 0.981 | 0.993 | 0.975 |
+
+---
+
+### 📌 Overall Metrics
+
+- **mAP (mean Precision)**: **0.764**
+- **Mean Recall**: **0.662**
+- **mIoU (Mean Intersection over Union)**: **0.564**
+
 
 # 🏁 Conclusion
 
