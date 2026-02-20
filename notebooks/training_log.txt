@@ -1,0 +1,46 @@
+RESUME TRAINING
+Continuing for 37 more epochs. PRINT_EVERY=2
+epoch=1 train=1.1647 val=1.1123 miou=0.4053 time=665.6s
+  SAVED best_model_weighted_dice_by_iou.pth best_miou=0.4053
+epoch=2 train=1.1310 val=1.1430 miou=0.4098 time=667.1s
+  SAVED best_model_weighted_dice_by_iou.pth best_miou=0.4098
+epoch=3 train=1.5278 val=1.2166 miou=0.3824 time=666.9s
+epoch=4 train=1.1330 val=1.1043 miou=0.4147 time=669.5s
+  SAVED best_model_weighted_dice_by_iou.pth best_miou=0.4147
+epoch=5 train=1.1065 val=1.1027 miou=0.4234 time=673.5s
+  SAVED best_model_weighted_dice_by_iou.pth best_miou=0.4234
+epoch=6 train=1.0823 val=1.1355 miou=0.4193 time=663.6s
+epoch=7 train=1.0638 val=1.2023 miou=0.4021 time=666.0s
+epoch=8 train=1.0393 val=1.0018 miou=0.4492 time=681.8s
+  SAVED best_model_weighted_dice_by_iou.pth best_miou=0.4492
+epoch=9 train=1.0061 val=0.9813 miou=0.4468 time=666.1s
+epoch=10 train=0.9881 val=0.9790 miou=0.4488 time=686.9s
+epoch=11 train=0.9602 val=0.9449 miou=0.4559 time=685.7s
+  SAVED best_model_weighted_dice_by_iou.pth best_miou=0.4559
+epoch=12 train=0.9390 val=0.9702 miou=0.4594 time=678.2s
+  SAVED best_model_weighted_dice_by_iou.pth best_miou=0.4594
+epoch=13 train=0.9192 val=0.9550 miou=0.4810 time=685.8s
+  SAVED best_model_weighted_dice_by_iou.pth best_miou=0.4810
+epoch=14 train=0.9088 val=0.9018 miou=0.4593 time=685.7s
+epoch=15 train=0.9019 val=0.8887 miou=0.4740 time=669.3s
+epoch=16 train=0.8786 val=0.8826 miou=0.4800 time=673.2s
+epoch=17 train=0.8744 val=0.8613 miou=0.4936 time=661.3s
+  SAVED best_model_weighted_dice_by_iou.pth best_miou=0.4936
+epoch=18 train=0.8599 val=0.8561 miou=0.4881 time=652.8s
+epoch=19 train=0.8533 val=0.8610 miou=0.4858 time=655.7s
+epoch=20 train=0.8348 val=0.8385 miou=0.4944 time=654.3s
+  SAVED best_model_weighted_dice_by_iou.pth best_miou=0.4944
+epoch=21 train=0.8298 val=0.8353 miou=0.5060 time=663.4s
+  SAVED best_model_weighted_dice_by_iou.pth best_miou=0.5060
+epoch=22 train=0.8234 val=0.8358 miou=0.4996 time=664.1s
+epoch=23 train=0.8067 val=0.8143 miou=0.5135 time=661.6s
+  SAVED best_model_weighted_dice_by_iou.pth best_miou=0.5135
+epoch=24 train=0.8016 val=0.8827 miou=0.5026 time=659.0s
+epoch=25 train=0.8152 val=0.8450 miou=0.4924 time=653.1s
+epoch=26 train=0.7894 val=1.0131 miou=0.4806 time=685.0s
+epoch=27 train=0.7903 val=0.8086 miou=0.4924 time=667.2s
+epoch=28 train=0.7703 val=0.7966 miou=0.5219 time=656.5s
+  SAVED best_model_weighted_dice_by_iou.pth best_miou=0.5219
+epoch=29 train=0.7650 val=0.7951 miou=0.5170 time=664.4s
+epoch=30 train=0.7671 val=0.8136 miou=0.4982 time=721.9s
+epoch=31 train=0.7574 val=0.8154 miou=0.4921 time=686.8s
